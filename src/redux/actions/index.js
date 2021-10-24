@@ -24,3 +24,10 @@ export const updatePost = createActions({
 
 export const showModal = createAction("SHOW_CREATE_POST_MODAL");
 export const hideModal = createAction("HIDE_CREATE_POST_MODAL");
+
+export const getToken = (token: string) => {
+  return {
+    type: "GET_TOKEN",
+    payload: token,
+  };
+};
